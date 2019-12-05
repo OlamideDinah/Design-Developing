@@ -1,3 +1,5 @@
+
+
 # Version 5.0 (1.5) of my tkinter/python project
 # Author: Olamide Dinah
 # Student of Upper Canada College (grade9)
@@ -34,7 +36,6 @@ def clicked():
     a = float(number1.get())
     b = float(number2.get())
     c = float(number3.get())
-
     m = (int(a)) / (int(b))
     y = (int(b)) / (int(b))
     z = (int(c)) / (int(b))
@@ -42,22 +43,24 @@ def clicked():
 
 
 
-
 # this code is just statement outputs for all differnet possible outcomes.
     if z > 0 and m > 0 and b > 0:
-
+        labelsteps.config(text=str(a) + "x" + "+" + str(b) + "y" + "+" + str(c) + "=" + str(0) + "\n" + str(b) + "y" + "+" + str(c) + "=" + str(a/-1) + "x" + "\n" + str(b) + "y" + "=" + str(a/-1) + "x" + str(c/-1) + "\n" + "y" + "=" + str(-a/b) + "x" + str(-c/b) ) 
         result = "y =" + "-" + str(m) + "x -" + str(z)
-        labelAns.config(text="Result is %s" % result)
+        labelAns.config(text="The Result is %s" % result)
+        explanation.config(text="In this scenario, you must isolate for the \n variable Y. This is done by shifting over the\n co-efficients to the other side. \n  it is considered poor practice to leave any value beside the y \n which means any such value must be divided out.")
     
     if z > 0 and m < 0 and b > 0:
-
+        labelsteps.config(text=str(a) + "x" + "+" + str(b) + "y" + "+" + str(c) + "=" + str(0) + "\n" + str(b) + "y" + "+" + str(c) + "=" + str(a/-1) + "x" + "\n" + str(b) + "y" + "=" + str(a/-1) + "x" + str(c/-1) + "\n" + "y" + "=" + str(-a/b) + "x" + str(-c/b) ) 
         result = "y =" + " " + str(int(m) / int(-1)) + "x -" + str(z)
-        labelAns.config(text="Result is %s" % result)
+        labelAns.config(text="The Result is %s" % result)
+        explanation.config(text="In this scenario, you must isolate for the \n variable Y. This is done by shifting over the\n co-efficients to the other side. \n  it is considered poor practice to leave any value beside the y \n which means any such value must be divided out.")
 
     if z < 0 and m < 0 and b > 0:
-
+        labelsteps.config(text=str(a) + "x" + "+" + str(b) + "y" + str(c) + "=" + str(0) + "\n" + str(b) + "y" + str(c) + "=" + str(a/-1) + "x" + "\n" + str(b) + "y" + "=" + str(a/-1) + "x" + "+" + str(c/-1) + "\n" + "y" + "=" + str(-a/b) + "x" + "+" + str(-c/b) ) 
         result = "y =" + " " + str(int(m) / int(-1)) + "x +" + str(int(z) / int(-1))
-        labelAns.config(text="Result is %s" % result)
+        labelAns.config(text="The Result is %s" % result)
+        explanation.config(text="In this scenario, you must isolate for the \n variable Y. This is done by shifting over the\n co-efficients to the other side. \n  it is considered poor practice to leave any value beside the y \n which means any such value must be divided out.")
 
 
 # accounting for when the y value is negative.
@@ -67,19 +70,21 @@ def clicked():
        # steps.config(text = str(int(a) "+" + - str(int(a) + str(int(b) + str(int(m) + "=" +  str(int(a) + "\n" + str(int(b) + str(int(m) - str(int(m) + "=" + "-" + str(int(a) + str(int(m) + "\n" + str(int(b) / str(int(b) + "=" + str(int(a) / str(int(b) + str(int(m) / str(int(b))  
         labelsteps.config(text=str(a) + "x" + str(b) + "y" + str(c) + "=" + str(0) + "\n" + str(b) + "y" + str(c) + "=" + str(a/-1) + "x" + "\n" + str(b) + "y" + "=" + str(a/-1) + "x" + "+" + str(c/-1) + "\n" + "y" + "=" + str(-a/b) + "x" + str(-c/b) ) 
         result = "y" + "=" + str(-a/b) + "x" + str(-c/b)
-        labelAns.config(text="Result is %s" % result)
+        labelAns.config(text="The Result is %s" % result)
         explanation.config(text="In this scenario, you must isolate for the \n variable Y. This is done by shifting over the\n variables to the other side. One thing you may have \nnoticed is that the values  ended up being negative.This \nis as it is considered poor practice to leave the \n negative,  which means  the negative  had to be \ndivided out.")
 
     
     if z > 0 and m < 0 and b < 0:
-
+        labelsteps.config(text=str(a) + "x" + str(b) + "y" + str(c) + "=" + str(0) + "\n" + str(b) + "y" + str(c) + "=" + str(a/-1) + "x" + "\n" + str(b) + "y" + "=" + str(a/-1) + "x" + "+" + str(c/-1) + "\n" + "y" + "=" + str(-a/b) + "x" + str(-c/b) ) 
         result = "y =" + " " + str(int(m) / int(-1)) + "x -" + str(z)
-        labelAns.config(text="Result is %s" % result)
+        labelAns.config(text="The Result is %s" % result)
+        explanation.config(text="In this scenario, you must isolate for the \n variable Y. This is done by shifting over the\n co-efficients to the other side. \n  it is considered poor practice to leave any value beside the y \n which means any such value must be divided out.")
 
     if z < 0 and m < 0 and b < 0:
-
+        labelsteps.config(text=str(a) + "x" + str(b) + "y" + "+" + str(c) + "=" + str(0) + "\n" + str(b) + "y" + "+" + str(c) + "=" + str(a/-1) + "x" + "\n" + str(b) + "y" + "=" + str(a/-1) + "x" + str(c/-1) + "\n" + "y" + "=" + str(-a/b) + "x" + "+" + str(-c/b) ) 
         result = "y =" + " " + str(int(m) / int(-1)) + "x +" + str(int(z) / int(-1))
-        labelAns.config(text="Result is %s" % result)
+        labelAns.config(text="The Result is %s" % result)
+        explanation.config(text="In this scenario, you must isolate for the \n variable Y. This is done by shifting over the\n co-efficients to the other side. \n  it is considered poor practice to leave any value beside the y \n which means any such value must be divided out.")
 
 
 # Creating a easily changeable  Var value that allows or easy value collection
@@ -241,7 +246,7 @@ root.title()
 root.geometry('450x225')
 root.configure(bg='lightblue')
 
-
+#creating another function to calculate slope
 def clicked2():
     a = float(x1.get())
     b = float(y1.get())
@@ -252,7 +257,7 @@ def clicked2():
     y = (int(c)) - (int(a))
 
     result = str(z/y)
-
+# a result statement
     labelAnswer2.config(text="Result is %s" % result)
  
  
@@ -261,7 +266,7 @@ y1 = tk.StringVar()
 x2 = tk.StringVar()
 y2 = tk.StringVar()
 
-
+# creating labels 
 labelTitle = tk.Label(root, text="Solve for Slope! (A Value)", bg = 'lightblue')
 labelNum1 = tk.Label(root, text="Enter first x value", bg = 'lightblue')
 labelNum2 = tk.Label(root, text="Enter first y value", bg = 'lightblue')
@@ -269,7 +274,7 @@ labelNum3 = tk.Label(root, text="Enter second x value", bg = 'lightblue')
 labelNum4 = tk.Label(root, text="Enter second y value", bg = 'lightblue')
 labelAnswer2 = tk.Label(root, text="The answer is", bg = 'lightblue')
 
-
+# positioning labels
 labelTitle.grid(row=0, column=2)
 labelNum1.grid(row=1, column=0)
 labelNum2.grid(row=2, column=0)
@@ -280,7 +285,7 @@ labelNum4.grid(row=4, column=0)
 labelNum4.grid(row=4, column=0)
 labelAnswer2.grid(row=5, column=2)
 
-
+# creating entry boxes for the values used in the math
 entrynum1 = tk.Entry(root, textvariable=x1)
 entrynum1. grid(row=1, column=2)
 entrynum2 = tk.Entry(root, textvariable=y1)
@@ -290,7 +295,7 @@ entrynum3. grid(row=3, column=2)
 entrynum4 = tk.Entry(root, textvariable=y2)
 entrynum4. grid(row=4, column=2)
 
-
+# configuring a button that when clicked performs the calculation
 buttondo = tk.Button(root, text="Calculate", command=clicked2)
 buttondo.grid(row=5, column=0)
 
@@ -301,4 +306,5 @@ root.mainloop()
 intro.mainloop()
 
 MyWindow.mainloop()
+#ending each program.
 
